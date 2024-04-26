@@ -93,15 +93,28 @@ namespace Assignment2_INT
 
         public static void Question_4()
         {
-            decimal elapsedtime, seconds;
+            decimal elapsedtime,hours, hoursSEC, minutes, minutesSEC, seconds;
 
-            Console.WriteLine("Enter in elapsed time of event in hours, minutes & seconds");
+            Console.WriteLine("Enter the amount of hours of the event");
 
-            elapsedtime= Convert.ToInt32(Console.ReadLine());
 
-            seconds = elapsedtime * 3600;
+            hours = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("{0} Is the elapsed time of the event in seconds", seconds);
+            Console.WriteLine("Enter the amount of minutes of the event");
+
+            minutes = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the amount of seconds of the event");
+
+            seconds = Convert.ToInt32(Console.ReadLine());
+
+           hoursSEC = hours * 3600 ;
+
+            minutesSEC = minutes * 60;
+
+            elapsedtime = hoursSEC + minutesSEC + seconds;
+
+            Console.WriteLine("{0} Is the elapsed time of the event in seconds", elapsedtime);
         }
         public static void Question_5()
         {
